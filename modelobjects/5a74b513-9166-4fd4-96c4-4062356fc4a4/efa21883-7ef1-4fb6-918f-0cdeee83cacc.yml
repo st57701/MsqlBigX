@@ -99,6 +99,16 @@ terms:
     isNullable: true
     hiddenInSource: false
     hiddenInTarget: false
+  - id: '96aa832f-f45b-4821-bc34-3d60c00d3d9b'
+    name: 'TerritoryID'
+    dataType:
+      platformDataTypeId: '9d8d167b-ffbb-4498-8721-de74c859dad5'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
 dataflows:
   - id: '8a479fdd-63e0-4c98-a3de-e4dd5454ac36'
     name: 'Dataflow1'
@@ -117,6 +127,8 @@ dataflows:
             expression: '2be33ab3-1a0d-45f1-8f3f-3132e89fdcb5.3cdc9656-4c2d-4770-87b0-760613942881'
           - termId: 'ccfb5469-5615-4fad-a3c5-a0fb9e477610'
             expression: '2be33ab3-1a0d-45f1-8f3f-3132e89fdcb5.72da00b8-953e-4c9e-aacd-41745047f148'
+          - termId: '96aa832f-f45b-4821-bc34-3d60c00d3d9b'
+            expression: '2be33ab3-1a0d-45f1-8f3f-3132e89fdcb5.212d1a5a-9641-4d91-a127-1086e25719dd'
         dataflowModelObjects:
           - alias: 's1'
             id: '2be33ab3-1a0d-45f1-8f3f-3132e89fdcb5'
