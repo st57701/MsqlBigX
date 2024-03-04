@@ -1,0 +1,7 @@
+id: 'e5217a58-deea-4b3a-2f54-08dc2d2de4ea'
+version: 'v1.2'
+name: 'C3_X'
+description: 'Bigenius C3_X training'
+configuration:
+  id: 'biGENIUS.Implementation.Generator.Datavault.Mssql'
+  version: '1.4.0'
