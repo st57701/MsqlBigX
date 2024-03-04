@@ -74,11 +74,12 @@ terms:
     dataType:
       platformDataTypeId: '9d8d167b-ffbb-4498-8721-de74c859dad5'
     isIdentity: false
-    isBusinessKey: true
+    isBusinessKey: false
     isForeignKey: false
     isNullable: true
     hiddenInSource: false
     hiddenInTarget: false
+    propertyValues: []
   - id: '3b43be81-2f02-4351-8bda-8b4f5033b981'
     name: 'PersonID'
     dataType:
