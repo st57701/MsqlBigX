@@ -43,3 +43,4 @@ views:
     default: true
     modelObjects:
       - id: '5da40c44-00fc-4979-bf75-788e0a9b6a22'
+      - id: 'efa21883-7ef1-4fb6-918f-0cdeee83cacc'
