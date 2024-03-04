@@ -1,0 +1,80 @@
+id: '5da40c44-00fc-4979-bf75-788e0a9b6a22'
+name: 'Customer'
+modelObjectTypeId: '95e356a3-8e38-4e44-a496-abb805f556b7'
+terms:
+  - id: '5c5038e3-0b96-46e7-9fad-fd3432766c8e'
+    name: 'CustomerID'
+    dataType:
+      platformDataTypeId: '9d8d167b-ffbb-4498-8721-de74c859dad5'
+    isIdentity: false
+    isBusinessKey: true
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '3cdc9656-4c2d-4770-87b0-760613942881'
+    name: 'PersonID'
+    dataType:
+      platformDataTypeId: '9d8d167b-ffbb-4498-8721-de74c859dad5'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '72da00b8-953e-4c9e-aacd-41745047f148'
+    name: 'StoreID'
+    dataType:
+      platformDataTypeId: '9d8d167b-ffbb-4498-8721-de74c859dad5'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '212d1a5a-9641-4d91-a127-1086e25719dd'
+    name: 'TerritoryID'
+    dataType:
+      platformDataTypeId: '9d8d167b-ffbb-4498-8721-de74c859dad5'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '2f907de8-7794-4d97-86b2-073fec9f215a'
+    name: 'AccountNumber'
+    dataType:
+      length: 10
+      platformDataTypeId: '9245c3e9-05f8-4e48-962c-e1b3c49bc239'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '08eadcd9-c522-4815-84dc-6e0a2b2437e8'
+    name: 'rowguid'
+    dataType:
+      platformDataTypeId: '351f41dd-ae2a-4710-85ad-b22383e7de6b'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: 'd127a2ac-6048-446d-b971-54bfa3443671'
+    name: 'ModifiedDate'
+    dataType:
+      platformDataTypeId: 'ee219fec-13ea-493e-9128-39a348ca0995'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+tags:
+  - '$discovery#id#1137728b-b1c4-417d-8061-82c1b88d3ec2'
+  - '$sourcesystem#id#254466d6-5f24-471f-b77d-a3415498ddb8'
+  - '$initial#name#customer'
+propertyValues: []

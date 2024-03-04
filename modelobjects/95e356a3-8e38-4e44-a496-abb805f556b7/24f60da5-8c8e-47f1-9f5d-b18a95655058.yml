@@ -1,0 +1,39 @@
+id: '24f60da5-8c8e-47f1-9f5d-b18a95655058'
+name: 'PersonCreditCard'
+modelObjectTypeId: '95e356a3-8e38-4e44-a496-abb805f556b7'
+terms:
+  - id: '7b6ba314-06d2-4204-aad7-f136b7245047'
+    name: 'BusinessEntityID'
+    dataType:
+      platformDataTypeId: '9d8d167b-ffbb-4498-8721-de74c859dad5'
+    isIdentity: false
+    isBusinessKey: true
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '811d1eb8-04b5-4896-8948-4b66f2db40db'
+    name: 'CreditCardID'
+    dataType:
+      platformDataTypeId: '9d8d167b-ffbb-4498-8721-de74c859dad5'
+    isIdentity: false
+    isBusinessKey: true
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '7c98d5a8-493f-4043-9173-e93390735943'
+    name: 'ModifiedDate'
+    dataType:
+      platformDataTypeId: 'ee219fec-13ea-493e-9128-39a348ca0995'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+tags:
+  - '$discovery#id#1137728b-b1c4-417d-8061-82c1b88d3ec2'
+  - '$sourcesystem#id#254466d6-5f24-471f-b77d-a3415498ddb8'
+  - '$initial#name#personcreditcard'
+propertyValues: []

@@ -1,0 +1,49 @@
+id: 'fa985093-5922-42ef-bcf7-7498f4d0f394'
+name: 'SpecialOfferProduct'
+modelObjectTypeId: '95e356a3-8e38-4e44-a496-abb805f556b7'
+terms:
+  - id: '3a64e428-f0eb-4ea7-8570-95473ee7f0a8'
+    name: 'SpecialOfferID'
+    dataType:
+      platformDataTypeId: '9d8d167b-ffbb-4498-8721-de74c859dad5'
+    isIdentity: false
+    isBusinessKey: true
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '121bdfd1-722a-4322-8a6a-f59f5cd02648'
+    name: 'ProductID'
+    dataType:
+      platformDataTypeId: '9d8d167b-ffbb-4498-8721-de74c859dad5'
+    isIdentity: false
+    isBusinessKey: true
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: 'd4d2fcac-1113-4790-aec8-8d2189bca5d5'
+    name: 'rowguid'
+    dataType:
+      platformDataTypeId: '351f41dd-ae2a-4710-85ad-b22383e7de6b'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '5be0bfcc-56d8-417f-acd8-4d1c3d0904b3'
+    name: 'ModifiedDate'
+    dataType:
+      platformDataTypeId: 'ee219fec-13ea-493e-9128-39a348ca0995'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+tags:
+  - '$discovery#id#1137728b-b1c4-417d-8061-82c1b88d3ec2'
+  - '$sourcesystem#id#254466d6-5f24-471f-b77d-a3415498ddb8'
+  - '$initial#name#specialofferproduct'
+propertyValues: []

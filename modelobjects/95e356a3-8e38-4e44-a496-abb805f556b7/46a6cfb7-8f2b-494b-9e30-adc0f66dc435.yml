@@ -1,0 +1,246 @@
+id: '46a6cfb7-8f2b-494b-9e30-adc0f66dc435'
+name: 'vSalesPerson'
+modelObjectTypeId: '95e356a3-8e38-4e44-a496-abb805f556b7'
+terms:
+  - id: '7dcf831e-5dca-4dda-a5ea-bc2a251831ad'
+    name: 'BusinessEntityID'
+    dataType:
+      platformDataTypeId: '9d8d167b-ffbb-4498-8721-de74c859dad5'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '250af4f0-b908-4778-ac48-c695bfb9d36c'
+    name: 'Title'
+    dataType:
+      length: 8
+      platformDataTypeId: 'bdf6e2aa-9167-4949-9f69-735bbf516472'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '97bbd82a-f6d0-4e77-96cd-d0438cbdbf4e'
+    name: 'FirstName'
+    dataType:
+      length: 50
+      platformDataTypeId: 'bdf6e2aa-9167-4949-9f69-735bbf516472'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: 'ac669d2d-3e24-4dfc-a162-efdfa0151679'
+    name: 'MiddleName'
+    dataType:
+      length: 50
+      platformDataTypeId: 'bdf6e2aa-9167-4949-9f69-735bbf516472'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: 'a1d11f81-c692-44f0-be84-59e82ee01ecb'
+    name: 'LastName'
+    dataType:
+      length: 50
+      platformDataTypeId: 'bdf6e2aa-9167-4949-9f69-735bbf516472'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '65ed959e-afbe-420d-bc3a-202eebc3050a'
+    name: 'Suffix'
+    dataType:
+      length: 10
+      platformDataTypeId: 'bdf6e2aa-9167-4949-9f69-735bbf516472'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '2bc8b9a9-fd1f-4b48-8e6c-b4a550ca3d8a'
+    name: 'JobTitle'
+    dataType:
+      length: 50
+      platformDataTypeId: 'bdf6e2aa-9167-4949-9f69-735bbf516472'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: 'f066cbc5-4c5b-4696-8292-92f3e8271fdf'
+    name: 'PhoneNumber'
+    dataType:
+      length: 25
+      platformDataTypeId: 'bdf6e2aa-9167-4949-9f69-735bbf516472'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: 'eece27ed-bd5b-45f6-823e-b0d9528e7afa'
+    name: 'PhoneNumberType'
+    dataType:
+      length: 50
+      platformDataTypeId: 'bdf6e2aa-9167-4949-9f69-735bbf516472'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: 'b02276aa-01e4-44bf-afdb-4c91b9363e34'
+    name: 'EmailAddress'
+    dataType:
+      length: 50
+      platformDataTypeId: 'bdf6e2aa-9167-4949-9f69-735bbf516472'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '0ae80afc-7eb0-408a-bec2-e1584c848abd'
+    name: 'EmailPromotion'
+    dataType:
+      platformDataTypeId: '9d8d167b-ffbb-4498-8721-de74c859dad5'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: 'b806307b-91fa-4e44-9d39-f920826fe17c'
+    name: 'AddressLine1'
+    dataType:
+      length: 60
+      platformDataTypeId: 'bdf6e2aa-9167-4949-9f69-735bbf516472'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: 'bd6e61f9-51c1-49e6-b602-4cd19a9dfb05'
+    name: 'AddressLine2'
+    dataType:
+      length: 60
+      platformDataTypeId: 'bdf6e2aa-9167-4949-9f69-735bbf516472'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: 'c63f0b05-34bd-4e57-81d4-55f7288f704c'
+    name: 'City'
+    dataType:
+      length: 30
+      platformDataTypeId: 'bdf6e2aa-9167-4949-9f69-735bbf516472'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: 'dc0b73f5-f0ea-4852-a064-9226fbb453b9'
+    name: 'StateProvinceName'
+    dataType:
+      length: 50
+      platformDataTypeId: 'bdf6e2aa-9167-4949-9f69-735bbf516472'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '29b681ba-e580-430a-a7dc-6cf2fc8e3cb7'
+    name: 'PostalCode'
+    dataType:
+      length: 15
+      platformDataTypeId: 'bdf6e2aa-9167-4949-9f69-735bbf516472'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '1d77cb7e-0d70-402e-9bf7-05911b42c09d'
+    name: 'CountryRegionName'
+    dataType:
+      length: 50
+      platformDataTypeId: 'bdf6e2aa-9167-4949-9f69-735bbf516472'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '0437901b-6d96-4bd6-a22e-18935bfbe0d8'
+    name: 'TerritoryName'
+    dataType:
+      length: 50
+      platformDataTypeId: 'bdf6e2aa-9167-4949-9f69-735bbf516472'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '50cbbab5-a95c-4261-8c68-31f2ec9d9547'
+    name: 'TerritoryGroup'
+    dataType:
+      length: 50
+      platformDataTypeId: 'bdf6e2aa-9167-4949-9f69-735bbf516472'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: 'd02c5390-cbbb-42e7-a612-23a9a45814fb'
+    name: 'SalesQuota'
+    dataType:
+      platformDataTypeId: '705e6076-9f71-44ed-bbd6-abd128976f77'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '8a74ed5b-145b-4627-a66f-b567bbc37da9'
+    name: 'SalesYTD'
+    dataType:
+      platformDataTypeId: '705e6076-9f71-44ed-bbd6-abd128976f77'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '7f2ed250-4160-4194-8d40-88a7c3966c65'
+    name: 'SalesLastYear'
+    dataType:
+      platformDataTypeId: '705e6076-9f71-44ed-bbd6-abd128976f77'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+tags:
+  - '$discovery#id#1137728b-b1c4-417d-8061-82c1b88d3ec2'
+  - '$sourcesystem#id#254466d6-5f24-471f-b77d-a3415498ddb8'
+  - '$initial#name#vsalesperson'
+propertyValues: []

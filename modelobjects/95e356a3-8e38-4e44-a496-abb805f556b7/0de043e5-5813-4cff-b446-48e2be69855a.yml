@@ -1,0 +1,70 @@
+id: '0de043e5-5813-4cff-b446-48e2be69855a'
+name: 'Store'
+modelObjectTypeId: '95e356a3-8e38-4e44-a496-abb805f556b7'
+terms:
+  - id: 'b75d2bd2-25fa-46f3-8dbf-ec6753fb9135'
+    name: 'BusinessEntityID'
+    dataType:
+      platformDataTypeId: '9d8d167b-ffbb-4498-8721-de74c859dad5'
+    isIdentity: false
+    isBusinessKey: true
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '2d0bf2b0-87b6-432f-b014-41a0ef2b305e'
+    name: 'Name'
+    dataType:
+      length: 50
+      platformDataTypeId: 'bdf6e2aa-9167-4949-9f69-735bbf516472'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '21212a6d-3d2e-4116-b9f7-58ce31842b1e'
+    name: 'SalesPersonID'
+    dataType:
+      platformDataTypeId: '9d8d167b-ffbb-4498-8721-de74c859dad5'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '4d6dd195-de7a-4f27-997f-82c583b17096'
+    name: 'Demographics'
+    dataType:
+      platformDataTypeId: '890d8679-a23e-4378-900f-2e752a325475'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '423f7ec4-08f0-4f46-aee0-3f89edb84b3d'
+    name: 'rowguid'
+    dataType:
+      platformDataTypeId: '351f41dd-ae2a-4710-85ad-b22383e7de6b'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: 'fd183bf6-1c15-4550-b8ee-63fc290bfc54'
+    name: 'ModifiedDate'
+    dataType:
+      platformDataTypeId: 'ee219fec-13ea-493e-9128-39a348ca0995'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+tags:
+  - '$discovery#id#1137728b-b1c4-417d-8061-82c1b88d3ec2'
+  - '$sourcesystem#id#254466d6-5f24-471f-b77d-a3415498ddb8'
+  - '$initial#name#store'
+propertyValues: []

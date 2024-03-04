@@ -10,3 +10,4 @@ sourceSystems:
     name: 'Demo Source System'
     description: 'Demo  CX_3 discovery'
     sourceSystemTypeId: 'f69491d8-eed8-43a0-89f9-60195b3415c2'
+    activeDiscovery: '1137728b-b1c4-417d-8061-82c1b88d3ec2'
