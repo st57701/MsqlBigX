@@ -120,6 +120,16 @@ terms:
     isNullable: true
     hiddenInSource: false
     hiddenInTarget: false
+  - id: 'ab5e37ef-4046-4fc8-8126-0a2a90ba468b'
+    name: 'rowguid'
+    dataType:
+      platformDataTypeId: '351f41dd-ae2a-4710-85ad-b22383e7de6b'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
 dataflows:
   - id: '8a479fdd-63e0-4c98-a3de-e4dd5454ac36'
     name: 'Dataflow1'
@@ -142,6 +152,8 @@ dataflows:
             expression: '2be33ab3-1a0d-45f1-8f3f-3132e89fdcb5.212d1a5a-9641-4d91-a127-1086e25719dd'
           - termId: 'ae74d470-36d1-41fd-b69a-67e1c13d453a'
             expression: '2be33ab3-1a0d-45f1-8f3f-3132e89fdcb5.2f907de8-7794-4d97-86b2-073fec9f215a'
+          - termId: 'ab5e37ef-4046-4fc8-8126-0a2a90ba468b'
+            expression: '2be33ab3-1a0d-45f1-8f3f-3132e89fdcb5.08eadcd9-c522-4815-84dc-6e0a2b2437e8'
         dataflowModelObjects:
           - alias: 's1'
             id: '2be33ab3-1a0d-45f1-8f3f-3132e89fdcb5'
