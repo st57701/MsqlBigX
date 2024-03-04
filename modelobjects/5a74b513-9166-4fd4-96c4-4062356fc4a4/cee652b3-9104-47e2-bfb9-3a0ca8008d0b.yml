@@ -1,0 +1,174 @@
+id: 'cee652b3-9104-47e2-bfb9-3a0ca8008d0b'
+name: 'CurrencyRate'
+description: 'Generated Model Object from CurrencyRate'
+modelObjectTypeId: '5a74b513-9166-4fd4-96c4-4062356fc4a4'
+terms:
+  - id: 'f8c89e3a-038d-4a43-a5cc-1afafdb8a359'
+    name: 'BG_LoadTimestamp'
+    description: 'Default term with the load timestamp'
+    dataType:
+      platformDataTypeId: '88718695-75e5-413d-a8e9-fa27fe064353'
+    defaultTermId: '3fdfd83b-00b6-47e7-b139-9b25993626ac'
+    isDefaultTerm: true
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: false
+    hiddenInSource: false
+    hiddenInTarget: true
+  - id: 'bec299f4-44cb-40ed-967a-7dd81ee280dc'
+    name: 'BG_SourceSystem'
+    description: 'Default term with an identifier of the source system'
+    dataType:
+      platformDataTypeId: 'bdf6e2aa-9167-4949-9f69-735bbf516472'
+      length: 255
+    defaultTermId: 'c3654f1c-5c92-4200-82ef-baac15ffa0ba'
+    isDefaultTerm: true
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '17762b4f-cafe-4e78-ae01-e7b140d1573b'
+    name: 'BG_IncrementalFilter'
+    description: 'Default term for incremental load'
+    dataType:
+      platformDataTypeId: 'f7afc941-4327-4359-b72f-7f663b794f08'
+    defaultTermId: 'f70ffce7-44ad-4d1a-98fd-01854032b15f'
+    isDefaultTerm: true
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: false
+    hiddenInSource: true
+    hiddenInTarget: false
+  - id: '2cafc87d-e064-4169-a0fc-499c4a7792fc'
+    name: 'BG_DataflowName'
+    description: 'Default term for incremental load'
+    dataType:
+      platformDataTypeId: 'bdf6e2aa-9167-4949-9f69-735bbf516472'
+      length: 255
+    defaultTermId: 'af496643-6176-472a-8abe-b6df2e13a2fb'
+    isDefaultTerm: true
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: true
+    hiddenInTarget: true
+  - id: 'dcd79ccd-afa6-4669-bedf-af8eb736fb3f'
+    name: 'BG_ID'
+    description: 'Default term for surrogate key of increment table'
+    dataType:
+      platformDataTypeId: '9d8d167b-ffbb-4498-8721-de74c859dad5'
+    defaultTermId: 'e8bfb245-78ae-42cc-93ca-ebb54f606720'
+    isDefaultTerm: true
+    isIdentity: true
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: false
+    hiddenInSource: true
+    hiddenInTarget: true
+  - id: '1bb4f8e3-ed0d-4b4c-86ad-813c8ab57481'
+    name: 'CurrencyRateID'
+    dataType:
+      platformDataTypeId: '9d8d167b-ffbb-4498-8721-de74c859dad5'
+    isIdentity: false
+    isBusinessKey: true
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '4b291c91-afdb-4a46-90ef-9af5e49e6957'
+    name: 'CurrencyRateDate'
+    dataType:
+      platformDataTypeId: 'ee219fec-13ea-493e-9128-39a348ca0995'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '30cfce80-289e-4f78-a67b-0de9b854a0d4'
+    name: 'FromCurrencyCode'
+    dataType:
+      length: 3
+      platformDataTypeId: '80d4cc92-0e85-4eef-adc0-c25d09754f6d'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: 'c354410b-495a-4c49-873c-893a9be85adc'
+    name: 'ToCurrencyCode'
+    dataType:
+      length: 3
+      platformDataTypeId: '80d4cc92-0e85-4eef-adc0-c25d09754f6d'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: 'b5003a30-a166-434f-ad79-289d4cd62002'
+    name: 'AverageRate'
+    dataType:
+      platformDataTypeId: '705e6076-9f71-44ed-bbd6-abd128976f77'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: '23dd1126-fd1f-44b0-9d59-6b7cd9a5d64f'
+    name: 'EndOfDayRate'
+    dataType:
+      platformDataTypeId: '705e6076-9f71-44ed-bbd6-abd128976f77'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+  - id: 'c8505b1b-bd01-4808-b8b5-5a45eb5791f1'
+    name: 'ModifiedDate'
+    dataType:
+      platformDataTypeId: 'ee219fec-13ea-493e-9128-39a348ca0995'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
+dataflows:
+  - id: '24d1e440-9bea-4ddd-9fb4-7246d9264e6f'
+    name: 'Dataflow1'
+    dataflowSets:
+      - id: '73efa0a4-c424-406d-840b-8f16ed02e367'
+        name: 'Set1'
+        termMappings:
+          - termId: 'f8c89e3a-038d-4a43-a5cc-1afafdb8a359'
+          - termId: 'bec299f4-44cb-40ed-967a-7dd81ee280dc'
+          - termId: '17762b4f-cafe-4e78-ae01-e7b140d1573b'
+          - termId: '2cafc87d-e064-4169-a0fc-499c4a7792fc'
+          - termId: 'dcd79ccd-afa6-4669-bedf-af8eb736fb3f'
+          - termId: '1bb4f8e3-ed0d-4b4c-86ad-813c8ab57481'
+            expression: 'd4b5468d-b10d-4b10-b7ee-d3873d572d08.a8abb9a3-1bea-4e8e-ba38-ea9c86251f06'
+          - termId: '4b291c91-afdb-4a46-90ef-9af5e49e6957'
+            expression: 'd4b5468d-b10d-4b10-b7ee-d3873d572d08.3ace29ed-e76c-4d25-9628-2556cbcda8a6'
+          - termId: '30cfce80-289e-4f78-a67b-0de9b854a0d4'
+            expression: 'd4b5468d-b10d-4b10-b7ee-d3873d572d08.3b47fd36-0896-4983-b486-466757259222'
+          - termId: 'c354410b-495a-4c49-873c-893a9be85adc'
+            expression: 'd4b5468d-b10d-4b10-b7ee-d3873d572d08.e031759d-afdb-4e7a-b188-4b93a15e6c37'
+          - termId: 'b5003a30-a166-434f-ad79-289d4cd62002'
+            expression: 'd4b5468d-b10d-4b10-b7ee-d3873d572d08.85de1159-03a2-41ce-aa1c-98a5293d379a'
+          - termId: '23dd1126-fd1f-44b0-9d59-6b7cd9a5d64f'
+            expression: 'd4b5468d-b10d-4b10-b7ee-d3873d572d08.33647702-988e-4231-9165-40704a781ef1'
+          - termId: 'c8505b1b-bd01-4808-b8b5-5a45eb5791f1'
+            expression: 'd4b5468d-b10d-4b10-b7ee-d3873d572d08.32830788-7195-4162-919d-6e78261e7e02'
+        dataflowModelObjects:
+          - id: 'd4b5468d-b10d-4b10-b7ee-d3873d572d08'
+            sourceModelObjectId: '01af2a49-de18-4ebb-b257-eeff1fbaeb20'
+            alias: 's1'
