@@ -1,0 +1,2594 @@
+id: '1137728b-b1c4-417d-8061-82c1b88d3ec2'
+name: 'mssql_adw2019_sales_output.json'
+timestamp: '2024-01-22T15:18:23.3147565Z'
+sourceSystem:
+  type: 'Microsoft SQL Server'
+sourceObjects:
+  - name: 'CountryRegionCurrency'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.CountryRegionCurrency'
+    objectType: {}
+    terms:
+      - name: 'CountryRegionCode'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 3
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 3
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'CurrencyCode'
+        sourceDataType:
+          name: 'NCHAR'
+          length: 3
+          isNullable: false
+        dataType:
+          name: 'NCHAR'
+          length: 3
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ModifiedDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'CreditCard'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.CreditCard'
+    objectType: {}
+    terms:
+      - name: 'CreditCardID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'CardType'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'CardNumber'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 25
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 25
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ExpMonth'
+        sourceDataType:
+          name: 'TINYINT'
+          isNullable: false
+        dataType:
+          name: 'TINYINT'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ExpYear'
+        sourceDataType:
+          name: 'SMALLINT'
+          isNullable: false
+        dataType:
+          name: 'SMALLINT'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ModifiedDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'Currency'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.Currency'
+    objectType: {}
+    terms:
+      - name: 'CurrencyCode'
+        sourceDataType:
+          name: 'NCHAR'
+          length: 3
+          isNullable: false
+        dataType:
+          name: 'NCHAR'
+          length: 3
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Name'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ModifiedDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'CurrencyRate'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.CurrencyRate'
+    objectType: {}
+    terms:
+      - name: 'CurrencyRateID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'CurrencyRateDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'FromCurrencyCode'
+        sourceDataType:
+          name: 'NCHAR'
+          length: 3
+          isNullable: false
+        dataType:
+          name: 'NCHAR'
+          length: 3
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ToCurrencyCode'
+        sourceDataType:
+          name: 'NCHAR'
+          length: 3
+          isNullable: false
+        dataType:
+          name: 'NCHAR'
+          length: 3
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'AverageRate'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: false
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'EndOfDayRate'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: false
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ModifiedDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'Customer'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.Customer'
+    objectType: {}
+    terms:
+      - name: 'CustomerID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'PersonID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: true
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'StoreID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: true
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'TerritoryID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: true
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'AccountNumber'
+        sourceDataType:
+          name: 'VARCHAR'
+          length: 10
+          isNullable: false
+        dataType:
+          name: 'VARCHAR'
+          length: 10
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'rowguid'
+        sourceDataType:
+          name: 'UNIQUEIDENTIFIER'
+          isNullable: false
+        dataType:
+          name: 'UNIQUEIDENTIFIER'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ModifiedDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'PersonCreditCard'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.PersonCreditCard'
+    objectType: {}
+    terms:
+      - name: 'BusinessEntityID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'CreditCardID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ModifiedDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'SalesOrderDetail'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.SalesOrderDetail'
+    objectType: {}
+    terms:
+      - name: 'SalesOrderID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'SalesOrderDetailID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'CarrierTrackingNumber'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 25
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 25
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'OrderQty'
+        sourceDataType:
+          name: 'SMALLINT'
+          isNullable: false
+        dataType:
+          name: 'SMALLINT'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ProductID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'SpecialOfferID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'UnitPrice'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: false
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'UnitPriceDiscount'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: false
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'LineTotal'
+        sourceDataType:
+          name: 'NUMERIC'
+          scale: 6
+          precision: 38
+          isNullable: false
+        dataType:
+          name: 'decimal'
+          scale: 6
+          precision: 38
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'rowguid'
+        sourceDataType:
+          name: 'UNIQUEIDENTIFIER'
+          isNullable: false
+        dataType:
+          name: 'UNIQUEIDENTIFIER'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ModifiedDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'SalesOrderHeader'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.SalesOrderHeader'
+    objectType: {}
+    terms:
+      - name: 'SalesOrderID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'RevisionNumber'
+        sourceDataType:
+          name: 'TINYINT'
+          isNullable: false
+        dataType:
+          name: 'TINYINT'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'OrderDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'DueDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ShipDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: true
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Status'
+        sourceDataType:
+          name: 'TINYINT'
+          isNullable: false
+        dataType:
+          name: 'TINYINT'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'OnlineOrderFlag'
+        sourceDataType:
+          name: 'BIT'
+          isNullable: false
+        dataType:
+          name: 'BIT'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'SalesOrderNumber'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 25
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 25
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'PurchaseOrderNumber'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 25
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 25
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'AccountNumber'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 15
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 15
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'CustomerID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'SalesPersonID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: true
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'TerritoryID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: true
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'BillToAddressID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ShipToAddressID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ShipMethodID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'CreditCardID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: true
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'CreditCardApprovalCode'
+        sourceDataType:
+          name: 'VARCHAR'
+          length: 15
+          isNullable: true
+        dataType:
+          name: 'VARCHAR'
+          length: 15
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'CurrencyRateID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: true
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'SubTotal'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: false
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'TaxAmt'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: false
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Freight'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: false
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'TotalDue'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: false
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Comment'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 128
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 128
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'rowguid'
+        sourceDataType:
+          name: 'UNIQUEIDENTIFIER'
+          isNullable: false
+        dataType:
+          name: 'UNIQUEIDENTIFIER'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ModifiedDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'SalesOrderHeaderSalesReason'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.SalesOrderHeaderSalesReason'
+    objectType: {}
+    terms:
+      - name: 'SalesOrderID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'SalesReasonID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ModifiedDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'SalesPerson'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.SalesPerson'
+    objectType: {}
+    terms:
+      - name: 'BusinessEntityID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'TerritoryID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: true
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'SalesQuota'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: true
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Bonus'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: false
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'CommissionPct'
+        sourceDataType:
+          name: 'SMALLMONEY'
+          isNullable: false
+        dataType:
+          name: 'SMALLMONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'SalesYTD'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: false
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'SalesLastYear'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: false
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'rowguid'
+        sourceDataType:
+          name: 'UNIQUEIDENTIFIER'
+          isNullable: false
+        dataType:
+          name: 'UNIQUEIDENTIFIER'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ModifiedDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'SalesPersonQuotaHistory'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.SalesPersonQuotaHistory'
+    objectType: {}
+    terms:
+      - name: 'BusinessEntityID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'QuotaDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'SalesQuota'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: false
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'rowguid'
+        sourceDataType:
+          name: 'UNIQUEIDENTIFIER'
+          isNullable: false
+        dataType:
+          name: 'UNIQUEIDENTIFIER'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ModifiedDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'SalesReason'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.SalesReason'
+    objectType: {}
+    terms:
+      - name: 'SalesReasonID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Name'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ReasonType'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ModifiedDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'SalesTaxRate'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.SalesTaxRate'
+    objectType: {}
+    terms:
+      - name: 'SalesTaxRateID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'StateProvinceID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'TaxType'
+        sourceDataType:
+          name: 'TINYINT'
+          isNullable: false
+        dataType:
+          name: 'TINYINT'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'TaxRate'
+        sourceDataType:
+          name: 'SMALLMONEY'
+          isNullable: false
+        dataType:
+          name: 'SMALLMONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Name'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'rowguid'
+        sourceDataType:
+          name: 'UNIQUEIDENTIFIER'
+          isNullable: false
+        dataType:
+          name: 'UNIQUEIDENTIFIER'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ModifiedDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'SalesTerritory'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.SalesTerritory'
+    objectType: {}
+    terms:
+      - name: 'TerritoryID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Name'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'CountryRegionCode'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 3
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 3
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Group'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'SalesYTD'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: false
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'SalesLastYear'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: false
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'CostYTD'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: false
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'CostLastYear'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: false
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'rowguid'
+        sourceDataType:
+          name: 'UNIQUEIDENTIFIER'
+          isNullable: false
+        dataType:
+          name: 'UNIQUEIDENTIFIER'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ModifiedDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'SalesTerritoryHistory'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.SalesTerritoryHistory'
+    objectType: {}
+    terms:
+      - name: 'BusinessEntityID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'TerritoryID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'StartDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'EndDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: true
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'rowguid'
+        sourceDataType:
+          name: 'UNIQUEIDENTIFIER'
+          isNullable: false
+        dataType:
+          name: 'UNIQUEIDENTIFIER'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ModifiedDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'ShoppingCartItem'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.ShoppingCartItem'
+    objectType: {}
+    terms:
+      - name: 'ShoppingCartItemID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ShoppingCartID'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Quantity'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ProductID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'DateCreated'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ModifiedDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'SpecialOffer'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.SpecialOffer'
+    objectType: {}
+    terms:
+      - name: 'SpecialOfferID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Description'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 255
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 255
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'DiscountPct'
+        sourceDataType:
+          name: 'SMALLMONEY'
+          isNullable: false
+        dataType:
+          name: 'SMALLMONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Type'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Category'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'StartDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'EndDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'MinQty'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'MaxQty'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: true
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'rowguid'
+        sourceDataType:
+          name: 'UNIQUEIDENTIFIER'
+          isNullable: false
+        dataType:
+          name: 'UNIQUEIDENTIFIER'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ModifiedDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'SpecialOfferProduct'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.SpecialOfferProduct'
+    objectType: {}
+    terms:
+      - name: 'SpecialOfferID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ProductID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'rowguid'
+        sourceDataType:
+          name: 'UNIQUEIDENTIFIER'
+          isNullable: false
+        dataType:
+          name: 'UNIQUEIDENTIFIER'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ModifiedDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'Store'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.Store'
+    objectType: {}
+    terms:
+      - name: 'BusinessEntityID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: true
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Name'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'SalesPersonID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: true
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Demographics'
+        sourceDataType:
+          name: 'XML'
+          isNullable: true
+        dataType:
+          name: 'varchar(max)'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'rowguid'
+        sourceDataType:
+          name: 'UNIQUEIDENTIFIER'
+          isNullable: false
+        dataType:
+          name: 'UNIQUEIDENTIFIER'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ModifiedDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: false
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'vIndividualCustomer'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.vIndividualCustomer'
+    objectType: {}
+    terms:
+      - name: 'BusinessEntityID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Title'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 8
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 8
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'FirstName'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'MiddleName'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'LastName'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Suffix'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 10
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 10
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'PhoneNumber'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 25
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 25
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'PhoneNumberType'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'EmailAddress'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'EmailPromotion'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'AddressType'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'AddressLine1'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 60
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 60
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'AddressLine2'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 60
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 60
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'City'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 30
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 30
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'StateProvinceName'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'PostalCode'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 15
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 15
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'CountryRegionName'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Demographics'
+        sourceDataType:
+          name: 'XML'
+          isNullable: true
+        dataType:
+          name: 'varchar(max)'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'vPersonDemographics'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.vPersonDemographics'
+    objectType: {}
+    terms:
+      - name: 'BusinessEntityID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'TotalPurchaseYTD'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: true
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'DateFirstPurchase'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: true
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'BirthDate'
+        sourceDataType:
+          name: 'DATETIME'
+          isNullable: true
+        dataType:
+          name: 'DATETIME'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'MaritalStatus'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 1
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 1
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'YearlyIncome'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 30
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 30
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Gender'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 1
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 1
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'TotalChildren'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: true
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'NumberChildrenAtHome'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: true
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Education'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 30
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 30
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Occupation'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 30
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 30
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'HomeOwnerFlag'
+        sourceDataType:
+          name: 'BIT'
+          isNullable: true
+        dataType:
+          name: 'BIT'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'NumberCarsOwned'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: true
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'vSalesPerson'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.vSalesPerson'
+    objectType: {}
+    terms:
+      - name: 'BusinessEntityID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Title'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 8
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 8
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'FirstName'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'MiddleName'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'LastName'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Suffix'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 10
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 10
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'JobTitle'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'PhoneNumber'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 25
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 25
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'PhoneNumberType'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'EmailAddress'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'EmailPromotion'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'AddressLine1'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 60
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 60
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'AddressLine2'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 60
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 60
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'City'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 30
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 30
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'StateProvinceName'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'PostalCode'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 15
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 15
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'CountryRegionName'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'TerritoryName'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'TerritoryGroup'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'SalesQuota'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: true
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'SalesYTD'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: false
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'SalesLastYear'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: false
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'vSalesPersonSalesByFiscalYears'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.vSalesPersonSalesByFiscalYears'
+    objectType: {}
+    terms:
+      - name: 'SalesPersonID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: true
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'FullName'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 152
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 152
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'JobTitle'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'SalesTerritory'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: '2002'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: true
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: '2003'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: true
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: '2004'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: true
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'vStoreWithAddresses'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.vStoreWithAddresses'
+    objectType: {}
+    terms:
+      - name: 'BusinessEntityID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Name'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'AddressType'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'AddressLine1'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 60
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 60
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'AddressLine2'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 60
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 60
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'City'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 30
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 30
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'StateProvinceName'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'PostalCode'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 15
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 15
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'CountryRegionName'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'vStoreWithContacts'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.vStoreWithContacts'
+    objectType: {}
+    terms:
+      - name: 'BusinessEntityID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Name'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'ContactType'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Title'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 8
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 8
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'FirstName'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'MiddleName'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'LastName'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Suffix'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 10
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 10
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'PhoneNumber'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 25
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 25
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'PhoneNumberType'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'EmailAddress'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'EmailPromotion'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+  - name: 'vStoreWithDemographics'
+    fullyQualifiedName: 'AdventureWorks2019.Sales.vStoreWithDemographics'
+    objectType: {}
+    terms:
+      - name: 'BusinessEntityID'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: false
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Name'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: false
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'AnnualSales'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: true
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'AnnualRevenue'
+        sourceDataType:
+          name: 'MONEY'
+          isNullable: true
+        dataType:
+          name: 'MONEY'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'BankName'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'BusinessType'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 5
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 5
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'YearOpened'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: true
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Specialty'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 50
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 50
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'SquareFeet'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: true
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Brands'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 30
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 30
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'Internet'
+        sourceDataType:
+          name: 'NVARCHAR'
+          length: 30
+          isNullable: true
+        dataType:
+          name: 'NVARCHAR'
+          length: 30
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false
+      - name: 'NumberEmployees'
+        sourceDataType:
+          name: 'INTEGER'
+          isNullable: true
+        dataType:
+          name: 'int'
+        isIdentity: false
+        isBusinessKey: false
+        isForeignKey: false
+        isDefaultTerm: false

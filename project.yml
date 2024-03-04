@@ -5,3 +5,8 @@ description: 'Bigenius C3_X training'
 configuration:
   id: 'biGENIUS.Implementation.Generator.Datavault.Mssql'
   version: '1.4.0'
+sourceSystems:
+  - id: '254466d6-5f24-471f-b77d-a3415498ddb8'
+    name: 'Demo Source System'
+    description: 'Demo  CX_3 discovery'
+    sourceSystemTypeId: 'f69491d8-eed8-43a0-89f9-60195b3415c2'
