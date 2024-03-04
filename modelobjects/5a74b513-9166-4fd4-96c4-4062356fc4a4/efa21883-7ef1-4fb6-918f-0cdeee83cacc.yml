@@ -79,6 +79,16 @@ terms:
     isNullable: true
     hiddenInSource: false
     hiddenInTarget: false
+  - id: '3b43be81-2f02-4351-8bda-8b4f5033b981'
+    name: 'PersonID'
+    dataType:
+      platformDataTypeId: '9d8d167b-ffbb-4498-8721-de74c859dad5'
+    isIdentity: false
+    isBusinessKey: false
+    isForeignKey: false
+    isNullable: true
+    hiddenInSource: false
+    hiddenInTarget: false
 dataflows:
   - id: '8a479fdd-63e0-4c98-a3de-e4dd5454ac36'
     name: 'Dataflow1'
@@ -93,6 +103,8 @@ dataflows:
           - termId: '9ca5c4e6-75c4-4512-b9c8-6eec499b4b5b'
           - termId: '96a132e9-a206-4eee-a4e2-98a69923079b'
             expression: '2be33ab3-1a0d-45f1-8f3f-3132e89fdcb5.5c5038e3-0b96-46e7-9fad-fd3432766c8e'
+          - termId: '3b43be81-2f02-4351-8bda-8b4f5033b981'
+            expression: '2be33ab3-1a0d-45f1-8f3f-3132e89fdcb5.3cdc9656-4c2d-4770-87b0-760613942881'
         dataflowModelObjects:
           - alias: 's1'
             id: '2be33ab3-1a0d-45f1-8f3f-3132e89fdcb5'
