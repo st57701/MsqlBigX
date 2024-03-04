@@ -113,14 +113,15 @@ terms:
   - id: 'ae74d470-36d1-41fd-b69a-67e1c13d453a'
     name: 'AccountNumber'
     dataType:
-      length: 10
       platformDataTypeId: '9245c3e9-05f8-4e48-962c-e1b3c49bc239'
+      length: 10
     isIdentity: false
-    isBusinessKey: false
+    isBusinessKey: true
     isForeignKey: false
     isNullable: true
     hiddenInSource: false
     hiddenInTarget: false
+    propertyValues: []
   - id: 'ab5e37ef-4046-4fc8-8126-0a2a90ba468b'
     name: 'rowguid'
     dataType:
